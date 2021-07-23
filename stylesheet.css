@@ -278,11 +278,11 @@ nav ul li .Booking-btn:hover {
   .lesson {
     float: left;
     width: 30%;
-    border: 4px solid #1768AC;
+    border: 5px solid #1768AC;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 8px;
   }
   
@@ -290,27 +290,25 @@ nav ul li .Booking-btn:hover {
       font-size: 20px;
       font-weight: 600;
   }
-  /* Tambahkan CSS untuk lesson-icon */
+  
   .lesson-icon {
     position: relative;
 
   }
   
-  /* Tambahkan CSS untuk tag <p> didalam lesson-icon */
   .lesson-icon p{
     position: absolute;
     top: 90px;
     width: 100%;
-    color: black;
+    color: #fff;
   }
   
-  /* Tambahkan CSS untuk txt-contents */
   .txt-contents {
     width: 80%;
     display: inline-block;
     margin-top: 20px;
     font-size: 15px;
-    color: #1768AC;
+    color: black;
   }
   
   .btn-wrapper {
@@ -335,7 +333,7 @@ nav ul li .Booking-btn:hover {
   
   .btn:hover {
     opacity: 1;
-    border: 1px solid white;
+    border: 1px solid black;
     background: #fff;
     transition: 1s;
   }
