@@ -301,7 +301,7 @@ nav ul li .Booking-btn:hover {
     position: absolute;
     top: 90px;
     width: 100%;
-    color: black;
+    color: #fff;
   }
   
   /* Tambahkan CSS untuk txt-contents */
@@ -315,7 +315,7 @@ nav ul li .Booking-btn:hover {
   
   .btn-wrapper {
     text-align: center;
-    margin: 20px 0;
+    margin: auto;
   }
   
   .btn-wrapper p {
