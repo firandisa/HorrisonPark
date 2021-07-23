@@ -1,0 +1,492 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* FONT DEFAULT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+*{
+	font-family:'Poppins', San-serif;
+}
+.container2, .wrapper-content, .hotel-view, .content, .title-content,.description-content, .special,.continue,.wrapper-service,.service,.title-service,.service-hotel,.dish,.security,.text,.quick-service,.text-service,.logo2,.alert,.text,.waiter,{
+	box-sizing: border-box;
+}
+/* KETIK KODE DIBAWAH YA GAN*/
+.searchpage {
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+}
+.fas {
+	margin-right: 5px;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0 ;
+}
+nav ul {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+
+}
+nav ul li a:hover {
+	color: #1768AC;
+	font-weight: bold;
+}
+nav ul li a {
+	font-size: 15px;
+}
+.logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+.Booking-btn{
+	font-weight: bold;
+}
+nav ul li .Booking-btn:hover {
+	color: #1768AC;
+	font-weight: bold;
+}
+.menu-toggle {
+ display: none;
+ flex-direction: column;
+ height: 20px;
+ justify-content: space-between;
+ position: relative;
+}
+.menu-toggle input {
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	left: -16px;
+	top: -6px;
+	opacity: 0;
+	cursor: hand;
+}
+.menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: blue;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+.menu-toggle span:nth-child(2){
+	transform-origin:0 0;
+
+}
+.menu-toggle span:nth-child(4){
+	transform-origin:0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+	transform :rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+	transform :rotate(-45deg) translate(-1px,0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+	transform :scale(0);
+}
+.container {
+	height: 800px;}
+
+.left-container{
+	align-items: center;
+	width: 50%;
+	background-color: #1768AC;
+	float: left;
+	height: 800px;
+}
+.content-left{
+	padding-top: 276px;
+	padding-left: 156px;
+	padding-right: 56px;
+	margin-top: 10px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	height: 500px;
+}
+.content-left h1 {
+	font-weight: normal;
+}
+.content-left p {
+	padding-top: 10px;
+	color: white;
+}
+.right-container {
+	float: right;
+	width: 50%;
+	background-image: url(FOTO6.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg 10s linear infinite 0s;
+	animation-timing-function: ease-in-out;
+	height: 100%;
+}
+
+@keyframes slideBg {
+	27%{
+	background-image: url(FOTO6.jpg);
+
+	}
+	45%{
+		background-image: url(FOTO5.jpg);
+	}
+	60%{
+		background-image: url(FOTO8.jpg);
+	}
+	75%{
+		background-image: url(FOTO4.jpg);
+	}
+	100%{
+		background-image: url(FOTO7.jpg);
+	}
+}
+
+/* COPAS KODE DARI BAWAH SINI*/
+/* DIPTA  */
+.container2 {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper-content{
+    display: flex;
+}
+
+
+.hotel-view {
+    margin-right: 8em;
+    width: 35%;
+    height: 30%;
+    border-radius: 8px;
+}
+
+.title-content {
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 2px solid #1768AC;
+    margin-bottom: 30px;
+}
+
+.special {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.description-content {
+    font-size: 14px;
+    color: gray;
+    opacity: 0.7;
+}
+
+.continue {
+    margin-top: 35px;
+    padding: 10px;
+    width: 20%;
+    color: #fff;
+    border-style: none;
+    background-color: #1768AC;
+    border-radius: 5px;
+
+}
+
+.wrapper-service {
+    margin-top: 10em;
+    display: flex;
+}
+
+.waiter {
+    width: 35%;
+    height: 35%;
+    border-radius: 8px;
+}
+
+
+.service-hotel{
+    max-width: 60%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.logo2 {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.title-service {
+    border-bottom: 2px solid #1768AC;
+    margin-bottom: 30px;
+}
+
+.description-service {
+    color: gray;
+    opacity: 0.7;
+}
+
+.text {
+    float: right;
+    font-weight: bold;
+}
+
+.food, .service {
+    margin-right: 50px;
+}
+/* DEVA */
+
+  .lesson-wrapper {
+    height: 500px;
+    padding-bottom: 900px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: black;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 30%;
+    border: 4px solid #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+  
+  .lesson h{
+      font-size: 20px;
+      font-weight: 600;
+  }
+  /* Tambahkan CSS untuk lesson-icon */
+  .lesson-icon {
+    position: relative;
+
+  }
+  
+  /* Tambahkan CSS untuk tag <p> didalam lesson-icon */
+  .lesson-icon p{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: #fff;
+  }
+  
+  /* Tambahkan CSS untuk txt-contents */
+  .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: black;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1s;
+  }
+/*MUSPY*/
+
+  /*FOOTER*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.review-section, .container4, .section-title, .review, .image-review, .review-box, .arrow-buttons, .material-icon-outlined, .review-information,.content-review,.reviewer, .rounded-image,.reviewer-profile,.reviewer-name, .clear, footer{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-align: right;
+}
+
+p {
+    font-size: 0.9rem;
+    font-style: normal;
+    color: rgba(60, 60, 60, 0.8);
+}
+
+.container4 {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.section-title {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.review {
+    display: flex;
+}
+
+.image-review {
+    width: 50%;
+    margin-right: 3rem;
+}
+
+.image-review img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.review-box {
+    width: 50%;
+    margin-left: 3rem;
+    display: inline-block;
+    position: relative;
+}
+
+.review-information {
+    position: absolute;
+    top: 20%;
+}
+
+.arrow-buttons {
+    float: right;
+}
+
+.material-icons-outlined {
+    background-color: rgba(60, 60, 60, 0.2);
+    font-size: 48px !important;
+    border-radius: 5px;
+    margin-left: 20px
+}
+
+.arrow-buttons span:hover {
+    background-color: rgba(60, 60, 60, 0.6);
+    transition: all 0.5s;
+}
+
+.fa-quote-left {
+    font-size: 2rem !important;
+    color: #c5d9ed;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.review-information {
+    width: 70%;
+}
+
+.review-information p {
+    margin-top: 2px;
+}
+
+.rounded-image {
+    float: left;
+    width: 5.5rem;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.reviewer-name {
+    padding-top: 20px;
+    margin-bottom: -5px;
+    font-size: 1.3rem;
+}
+
+.reviews-section {
+    padding-bottom: 100px;
+}
+
+.social-media span {
+    padding: 7px;
+    background-color: #fff;
+    color: #0a4b78;
+    border-radius: 90px;
+    margin-right: 10px;
+}
+
+.social-media {
+    float: left;
+    padding-top: 27px;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #0a4b78;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.white {
+    color: white;
+    text-align: right;
+    padding-top: 30px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.clear {
+    clear: left;
+}
