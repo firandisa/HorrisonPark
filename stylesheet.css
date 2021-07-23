@@ -290,13 +290,12 @@ nav ul li .Booking-btn:hover {
       font-size: 20px;
       font-weight: 600;
   }
-  /* Tambahkan CSS untuk lesson-icon */
+  
   .lesson-icon {
     position: relative;
 
   }
   
-  /* Tambahkan CSS untuk tag <p> didalam lesson-icon */
   .lesson-icon p{
     position: absolute;
     top: 90px;
@@ -304,7 +303,6 @@ nav ul li .Booking-btn:hover {
     color: black;
   }
   
-  /* Tambahkan CSS untuk txt-contents */
   .txt-contents {
     width: 80%;
     display: inline-block;
@@ -315,7 +313,7 @@ nav ul li .Booking-btn:hover {
   
   .btn-wrapper {
     text-align: center;
-    margin: 20px 0;
+    margin: auto;
   }
   
   .btn-wrapper p {
